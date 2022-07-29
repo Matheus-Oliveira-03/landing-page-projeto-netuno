@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="mainHeader" class="conteiner">
+        <div id="navigationMenu" class="conteiner">
+            <img src="../Assets_Netuno/assets/logo.png" alt="Logo do Projeto Netuno">
+            <nav>
+                <ul class="conteiner">
+                    <li><a href="#theProject">O Projeto</a></li>
+                    <li><a href="#theProblem">O Problema</a></li>
+                    <li><a href="#yourJorneyTitle">Sua jornada</a></li>
+                    <li><a href="#objectives">Objetivos</a></li>
+                </ul>
+            </nav>
+            <button class="selectiveProcessButton"><a href="/">Processo Seletivo</a></button>
+        </div>
+    </header>
+
+    <main>
+        <section id="initialSection">
+            <aside class="shadow">
+                <form action="">
+                    <div id="yourDataConteiner">
+                        <h3>Formulário de Cadastro</h3>
+                        <fieldset id="yourData">
+                            <legend>Preencha seus dados</legend>
+
+                            <div class="conteiner">
+                                <label for="fullName"><img src="../Assets_Netuno/icones/user.png" alt="Ícone de usuário"></label>
+                                <input type="text" id="fullName" placeholder="Nome completo*" required>
+                            </div>
+                            <div class="conteiner">
+                                <label for="eMail"><img src="../Assets_Netuno/icones/mail.png" alt="Ícone de email"></label>
+                                <input type="email" id="eMail" placeholder="E-mail*" required>
+                            </div>
+                            <div class="conteiner">
+                                <label for="state"><img src="../Assets_Netuno/icones/state.png" alt="Ícone de estado"></label>
+                                <select required>
+                                    <option selected disabled>Estado*</option>
+
+                                    <optgroup label="Região Norte">
+                                        <option>Acre</option>
+                                        <option>Amapá</option>
+                                        <option>Amazonas</option>
+                                        <option>Rondônia</option>
+                                        <option>Roraima</option>
+                                        <option>Tocantins</option>
+                                    </optgroup>
+
+                                    <optgroup label="Região Centro-Oeste">
+                                        <option>Distrito Federal</option>
+                                        <option>Goiás</option>
+                                        <option>Mato Grosso</option>
+                                        <option>Mato Grosso do Sul</option>
+                                    </optgroup>
+
+                                    <optgroup label="Região Nordeste">
+                                        <option>Alagoas</option>
+                                        <option>Bahia</option>
+                                        <option>Ceará</option>
+                                        <option>Maranhão</option>
+                                        <option>Piauí</option>
+                                        <option>Pernambuco</option>
+                                        <option>Paraíba</option>
+                                        <option>Rio Grande do Norte</option>
+                                        <option>Sergipe</option>
+                                    </optgroup>
+
+                                    <optgroup label="Região Sul">
+                                        <option>Paraná</option>
+                                        <option>Rio Grande do Sul</option>
+                                        <option>Santa Catarina</option>
+                                    </optgroup>
+
+                                    <optgroup label="Região Sudeste">
+                                        <option>Espírito Santo</option>
+                                        <option>Minas Gerais</option>
+                                        <option>Rio de Janeiro</option>
+                                        <option>São Paulo</option>
+                                    </optgroup>
+                                </select>
+                            </div> 
+
+                            
+                        </fieldset>
+                    </div>
+                    
+
+                    <div id="programingKnowledgeConteiner">
+                        <fieldset id="programingKnowledge" class="checkConteiner">
+                            <legend>Conhecimento de Programação*</legend>
+
+                            <div>
+                                <input type="checkbox" id="*HTML" checked>
+                                <label for="*HTML">HTML</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="*CSS">
+                                <label for="*CSS">CSS</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="*JavaScript" checked>
+                                <label for="*JavaScript">JavaScript</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="*PHP">
+                                <label for="*PHP">PHP</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="*.NET">
+                                <label for="*.NET">.NET</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="*Vue.JS">
+                                <label for="*Vue.JS">Vue.JS</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="*React.JS">
+                                <label for="*React.JS">React.JS</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="*ReactNative" checked>
+                                <label for="*ReactNative">React Native</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="*Node">
+                                <label for="*Node">Node</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="*Python">
+                                <label for="*Python">Python</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="*Flutter" checked>
+                                <label for="*Flutter">Flutter</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="*Outras" checked>
+                                <label for="*Outras">Outras</label>
+                            </div>
+                        </fieldset>
+                    </div>
+                    
+                    <div id="workQuestionConteiner">
+                        <fieldset id="workQuestion" class="checkConteiner">
+                            <legend>Já trabalhou com desenvolvimento?</legend>
+
+                            <div>
+                                <input type="checkbox" id="*não" checked>
+                                <label for="*não">Não</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" id="*sim">
+                                <label for="*sim">Sim</label>
+                            </div>
+                        </fieldset>
+
+                        <span id="requiredReminder">(*) Campos obrigatórios</span>
+
+                        <button type="submit">Enviar</button>
+
+                        <span id="privacyReminder">Ao clicar em enviar, você concorda com todos os termos de uso de dados descritos em <a href="/">política de privacidade</a>.</span>
+                    </div>
+                    
+                </form>
+            </aside>
+        </section>
+
+        <article id="theProject" class="conteiner">
+
+            <img src="../Assets_Netuno/dev.png" alt="Ilustração de desenvolvimento web">
+            
+            <div class="textBox">
+                <h2 class="articleTitle">O Projeto</h2>
+
+                <p class="weakerText">Com "novo normal" causado pela pandemia dos últimos anos, mais empresas no mundo todo têm aberto oportunidades no modelo Home Office.<br>Alinhado à depreciação da moeda local, temos um alto índice de profissionais migrando para trabalhos em outros países.</p>
+
+                <p class="strongerText">O projeto Netuno, idealizado pela Fasters, tem por objetivo reduzir os estresses causados por recrutamento e turn over na área da tecnologia, bem como gerar oportunidade de carreira para novos profissionais.</p>
+            </div>
+        </article>
+
+        <article id="theProblem" class="conteiner">
+            <img src="../Assets_Netuno/Container2.png" alt="Profissional da área do desenvolvimento web">
+            <div class="textBox">
+                <h2 class="articleTitle">O Problema</h2>
+
+                <p id="problemExposition">Falta de profissional de TI no Mercado brasileiro: um problema que demanda atenção urgente.</p>
+
+                <p class="weakerText">Estima-se que atualmente tenhamos um déficit de 408 mil postos de trabalho, com perdas se acumulando na casa dos R$167 bilhões, de acordo com a Softex, uma organização social voltada ao fomento da área de TI.</p>
+
+                <p class="strongerText">Um dos principais fatores para essa falta de profissionais é o êxodo de profissionais para o exterior.</p>
+            </div>
+
+            <aside class="conteiner">
+                <div class="shadow">
+                    <h3>Oportunidade</h3>
+                    <p class="weakerText">Acreditamos que a combinação de interesse, dedicação e oprtunidade pode causar um grande impacto nas pessoas, nas organizações e no mundo.</p>
+                </div>
+                <div class="shadow">
+                    <h3>Comunidade</h3>
+                    <p class="weakerText">Dentro de um grupo de pessoas mais experientes e acessíveis, a curva de aprendizado ocorre de forma mais rápida, fluída e eficiente.</p>
+                </div>
+                <div class="shadow">
+                    <h3>Experiencia Real</h3>
+                    <p class="weakerText">Entendemos que somente as experiências reais poderam trazer a bagagem que a teoria não o pode fazer.</p>
+                </div>
+            </aside>
+        </article>
+    
+        <article id="yourJorney" class="conteiner">
+            <div id="yourJorneyTitle" class="conteiner">
+                <img src="../Assets_Netuno/Elements/Vector2.png" alt="Elemento decorativo">
+                <h2 class="articleTitle">Sua Jornada</h2>
+                <img src="../Assets_Netuno/Elements/Vector2.png" alt="Elemento decorativo">
+            </div>
+            
+
+            <div class="table">
+                <div>
+                    <div class="conteiner">
+                        <img src="../Assets_Netuno/icones/calendario.png" alt="ìcone de um calendário">
+                    </div>     
+                    <p class="weakerText">Programas de 4 meses de duração, sendo 6 horas/dia.</p>
+                </div>
+
+                <div>
+                    <div class="conteiner">
+                        <img src="../Assets_Netuno/icones/medalha.png" alt="Ícone de uma medalha">
+                    </div>                   
+                    <p class="weakerText">Do Zero ao Junior Promissor em 4 meses.</p>
+                </div>
+
+                <div>
+                    <div class="conteiner">
+                        <img src="../Assets_Netuno/icones/relogio.png" alt="Ícone de um relógio">
+                    </div>
+                    <p class="weakerText">640 horas de aplicação prática dos conceitos.</p>
+                </div>
+
+                <div>
+                    <div class="conteiner">
+                        <img src="../Assets_Netuno/icones/home.png" alt="Ícone de uma casa">
+                    </div>    
+                    <p class="weakerText">Mentoria individual e coletiva em padrão ágil.</p>
+                </div>
+
+                <div>
+                    <div class="conteiner">
+                        <img src="../Assets_Netuno/icones/group.png" alt="Ícone de um grupo de pessoas">
+                    </div>                    
+                    <p class="weakerText">100% Home Office com plataformas de cursos online.</p>
+                </div>
+
+                <div>
+                    <div class="conteiner">
+                        <img src="../Assets_Netuno/icones/target.png" alt="Ícone de um alvo">
+                    </div>                   
+                    <p class="weakerText">Variedade de áreas dentro da tecnologia.</p>
+                </div>
+            </div>
+
+            <button class="shadow conteiner"><p>Quero me cadastrar para o <a href="/">Processo Seletivo</a></p> <img src="../Assets_Netuno/icones/enter.png" alt="Ícone de entrada"></button>
+
+            <img src="../Assets_Netuno/Elements/Vector1.png" alt="Elemento decorativo">
+        </article>
+
+        <article id="objectives" class="conteiner">
+            <h2 class="articleTitle">Objetivos</h2>
+            <section>
+                <div class="shadow conteiner">
+                    <h3>Otimizar</h3>
+                    <p class="weakerText">Otimizar todo processo de contratação chegando a contribuir com uma economia de 40% no processo de recutamento.</p>
+                </div>
+                <div class="shadow conteiner">
+                    <h3>Gerar</h3>
+                    <p class="weakerText">Gerar novas oportunidades de carreira para pessoas interessadas em ingressar na área ou migrar de outras áreas que esteja descontente.</p>
+                </div>
+                <div class="shadow conteiner">
+                    <h3>Filtrar</h3>
+                    <p class="weakerText">Criar oportunidades brilhantes para profissionais que se destacarem junto a parceiros estratégicos de negócios.</p>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer id="mainFooter" class="conteiner">
+        <div>
+            <img src="../Assets_Netuno/assets/logo+slogan.png" alt="Logo com o slogan do projeto netuno">
+            <div>
+                <a href="/"><img src="../Assets_Netuno/icones/fb.png" alt="Ícone do Facebook"></a>
+                <a href="/"><img src="../Assets_Netuno/icones/ig.png" alt="Ícone do Instagram"></a>
+                <a href="/"><img src="../Assets_Netuno/icones/in.png" alt="Ícone do Linkedin"></a> 
+            </div>
+            <p>Netuno© 2022 - Todos os direitos reservados</p>
+        </div>
+        <button class="selectiveProcessButton"><a href="/">Processo Seletivo</a></button>
+        <nav>
+            <ul>
+                <li><a href="#theProject">O Projeto</a></li>
+                <li><a href="#theProblem">O Problema</a></li>
+                <li><a href="#yourJorneyTitle">Sua jornada</a></li>
+                <li><a href="#objectives">Objetivos</a></li>
+            </ul>
+        </nav>
+        <aside>
+            <h4>Contato</h4>
+            <a href="tel:11912345678">11 91234.5678</a>
+            <a href="mailto:contato@netuno.com.br">contato@netuno.com.br</a>
+        </aside>
+    </footer>
+</body>
+</html>

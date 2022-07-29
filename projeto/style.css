@@ -1,0 +1,608 @@
+/*=====General=====*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'noto Sans', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 16px;
+}
+
+.textBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 24em;
+    margin-left: 40px;
+}
+
+.articleTitle {
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.selectiveProcessButton {
+    background-color: #000;
+    border-radius: 8px;
+    width: 155px;
+    line-height: 40px;
+    font-size: 15px;
+    border: none;
+}
+
+.selectiveProcessButton a {
+    text-align: center;
+}
+
+.shadow {
+    box-shadow: 0 2em 1.3em #00000022;
+}
+
+.weakerText {
+    font-size: 14px;
+    margin: 10px 0;
+    font-weight: 100;
+}
+
+.strongerText {
+    font-size: 14px;
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+main {
+    background-color: #1A7FBD;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background-color: #1A7FBD;
+}
+
+.conteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+fieldset {
+    padding: 20px;
+    display: flex;
+    border: none;
+    flex-wrap: wrap;
+}
+
+/*=====Header=====*/
+
+#navigationMenu {
+    background-color: #1A7FBD;
+    padding: 20px;
+    height: 2.23%;
+    width: 100%;
+}
+
+#navigationMenu ul {
+    justify-content: space-between;
+    margin: 0 4em;
+}
+
+#navigationMenu ul li {
+    padding: 0 10px;
+    line-height: 40px;
+    border-radius: 8px;
+}
+
+ /*
+#navigationMenu ul li:hover {
+    border: #fff solid 1px;
+    padding: 0 9px;
+    line-height: 39px;
+    border-radius: 8px;
+}
+*/
+
+#navigationMenu a{
+    color: #fff;
+}
+
+#navigationMenu img{
+    width: 175px;
+}
+
+#mainHeader {
+    flex-direction: column;
+}
+
+#mainHeader::after {
+    content: '';
+    background: linear-gradient(90deg, #1a7fbd00, #fff, #1a7fbd00);
+    width: 90%;
+    height: 1px;
+}
+
+/*=====Initial Section=====*/
+
+#initialSection {
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+    background-image: url(../Assets_Netuno/bannertopo.png);
+    height: 950px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    background-position: center center;
+    background-position-x: -13.5em;
+    position: relative;
+} 
+
+#initialSection aside{
+    position: relative;
+    border-radius: 0.7em;
+    margin: 8% 11% 0 0;
+    height: 80%;
+    width: 370px;
+}
+
+ /*
+#initialSection aside::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    background: linear-gradient(#fff, #A4DCFF, #fff);
+}
+*/
+
+#initialSection form {
+    background-color: #fff;
+    border-radius: 0.7em;
+    height: 100%;
+}
+
+/*
+#programingKnowledge {
+    background-color: #1A7FBD;
+    font-size: 12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5px;
+}
+*/
+
+#yourDataConteiner {
+    padding: 20px;
+}
+
+#yourDataConteiner h3 {
+    margin: 10px 0 15px 20px;
+    color: #00000033;
+}
+
+#yourData legend {
+    margin: 0 0 10px 20px;
+    color: #1A7FBD;
+    font-weight: 650;
+}
+
+#yourData input{
+    border: none;
+    flex-grow: 1;
+    width: 100%;
+}
+
+#yourData select{
+    border: none;
+    flex-grow: 1;
+    width: 100%;
+}
+
+#yourData {
+    padding: 0;
+    font-size: 13px;
+    color: #1A7FBD;
+}
+
+#yourData div {
+    height: 10px;
+    width: 100%;
+    margin-top: 10px;
+    padding: 20px 14px;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    border: #00000033 solid 1px;
+    border-radius: 6px;
+}
+
+#yourData div img{
+    width: 45%;
+    margin-right: 4px;
+}
+
+#programingKnowledgeConteiner {
+    background-color: #1A7FBD;
+    padding: 23px 2.5px 5px;
+}
+
+#programingKnowledge {
+    column-gap: 4%;
+    row-gap: 14px;
+    font-size: 12px;
+    color: white;
+}
+
+.checkConteiner input{
+    display: none;
+}
+
+.checkConteiner input + label::before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    border-radius: 23%;
+    border: #fff solid 1px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 9px;
+    box-sizing: border-box;
+}
+
+#workQuestion input + label::before {
+    border-color: #1A7FBD;
+}
+
+.checkConteiner input:checked + label::before {
+    padding: 2px;
+    background-color: #fff;
+    background-clip: content-box;
+}
+
+#workQuestion input:checked + label::before {
+    background-color: #1A7FBD;
+}
+
+#workQuestionConteiner{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#workQuestion {
+    margin-bottom: 15px;
+}
+#workQuestion legend{
+    font-size: 14px;
+    color: #1A7FBD;
+    font-weight: 550;
+}
+
+#workQuestion div {
+    margin-right: 20px;
+    color: #00000055;
+}
+
+#workQuestionConteiner button {
+    color: #fff;
+    font-weight: bold;
+    background-color: #1A7FBD;
+    line-height: 45px;
+    width: 96%;
+    border: none;
+    border-radius: 6px;
+    margin: auto;
+}
+
+#requiredReminder {
+    border-top: #00000033 solid 1px;
+    font-weight: bold;
+    font-size: 8px;
+    text-align: center;
+    color: #1A7FBD;
+    width: 96%;
+    margin: 0 auto 25px;
+    padding-top: 10px;
+}
+
+#privacyReminder {
+    color: #00000055;
+    font-size: 8px;
+    font-weight: 600;
+    text-align: center;
+    width: 75%;
+    margin: 5px auto 15px;
+}
+
+#privacyReminder a{
+    color: #1A7FBD;
+    font-size: 8px;
+}
+
+/*=====The project=====*/
+
+#theProject {
+    color: #A4DCFF;
+    padding-bottom: 5em;
+    background-size: 50em;
+}
+
+#theProject img{
+    width: 30em;
+    width: 33em;
+    background: radial-gradient(#A4DCFF, #1A7FBD 16em);
+}
+
+#theProject div p{
+    color: #fff;
+}
+
+/*=====O Problema=====*/
+
+#theProblem {
+    flex-wrap: wrap-reverse;
+    background-color: #fff;
+    position: relative;
+    align-items: flex-end;
+}
+
+#theProblem > div {
+    margin: 10% 5% 5%;
+}
+
+#theProblem > div > h2 {
+    color: #1A7FBD;
+}
+
+#problemExposition {
+    font-size: 17.5px;
+    font-weight: 600;
+    padding: 20px 0 25px;
+    border-bottom: #00000033 solid 1px;
+}
+
+#theProblem img{
+    width: 28em;
+}
+
+/*
+.gradientTitle {
+    background-image: linear-gradient(90deg, #1A7FBD, #A4DCFF);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+*/
+
+#theProblem aside {
+    position: absolute;
+    flex-wrap: wrap;
+    width: 896px;
+    height: 220px;
+    bottom: -120px;
+    gap: 1%;
+    border-radius: 10px;
+}
+
+#theProblem aside > div {
+    width: 30%;
+    background-color: #fff;
+    border-radius: 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: #00000011 solid 0.5px;
+}
+
+#theProblem aside > div > h3 {
+    text-align: center;
+    width: 100%;
+    font-size: 24px;
+    height: 33%;
+}
+
+#theProblem aside > div > p{
+    text-align: center;
+    width: 100%;
+}
+
+/*=====Sua jornada=====*/
+
+#yourJorney {
+    background-color: #fff;
+    flex-direction: column;
+}
+
+#yourJorneyTitle {
+    margin: 220px auto 3.71%;
+    color: #1A7FBD;
+    width: 100%;
+}
+
+#yourJorneyTitle .articleTitle {
+    text-align: center;
+    margin: 0 1.5%;
+}
+
+#yourJorneyTitle img {
+    width: 27.5%;
+}
+
+#yourJorneyTitle > img:first-child {
+    transform: rotate(180deg);
+}
+
+.table {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 70%;
+    height: 17.1%;
+    gap: 10px;
+}
+
+.table > div {
+    background-color: #1A7FBD;
+    border-radius: 10px;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 10px 20px #0002;
+}
+
+.table > div > div {
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    padding: 13px;
+}
+
+.table > div > div > img {
+    width: 27px;
+}
+
+.table > div > p {
+    color: #fff;
+    margin: 0 0 0 15px;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+#yourJorney > button {
+    background-color: #000;
+    border-radius: 10px;
+    height: 7.23%;
+    padding: 20px;
+    width: 31%;
+    justify-content: center;
+    column-gap: 2.38%;
+    border: none;
+    color: #fff;
+    margin: 120px 0 20px 0;
+}
+
+#yourJorney > button > p {
+    font-size: 16px;
+}
+
+#yourJorney > button > p > a {
+    color: #1A7FBD;
+}
+
+#yourJorney > button > img {
+    height: 22px;
+}
+
+#yourJorney > img {
+    margin: 0 0 9.64% 0;
+}
+
+/*=====Objectives=====*/
+
+#objectives {
+    flex-direction: column;
+    background: radial-gradient(#A4DCFF, #1A7FBD);
+}
+
+#objectives h2 {
+    color: #fff;
+    margin: 55px 0 45px 0;
+}
+
+#objectives section {
+    display: flex;
+    width: 70%;
+    height: 43.5%;
+    gap: 10px;
+    margin: 0 0 120px 0;
+}
+
+#objectives section > div {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 33%;
+    padding: 20px 40px;
+    flex-direction: column;
+    text-align: center;
+    justify-content: flex-start;
+}
+
+#objectives section > div > h3 {
+    font-size: 26px;
+    margin: 10px 0 0 0;
+    width: 100%;
+}
+
+/*=====footer=====*/
+
+#mainFooter {
+    background-color: #000;
+    color: #fff;
+    padding: 6.7%;
+    gap: 5%;
+}
+
+#mainFooter a {
+    color: #fff;
+    display: block;
+}
+
+#mainFooter > div {
+    margin: 0 40px 0 0;
+}
+
+#mainFooter > div > div {
+    display: flex;
+}
+
+#mainFooter > div > div > a > img {
+    width: 15px;
+    margin: 12px 20px 12px 0;
+}
+
+#mainFooter > div > p {
+    font-size: 8px;
+    color: #fff9;
+}
+
+#mainFooter button {
+    background-color: #fff;
+    align-self: flex-start;
+}
+
+#mainFooter button > a {
+    color: #000;
+    font-weight: bold;
+}
+
+#mainFooter nav {
+    border-right: #fff7 solid 1px;
+    height: 7em;
+    padding: 0 5% 0 0;
+}
+
+#mainFooter nav > ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+#mainFooter aside {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 7em;
+}
